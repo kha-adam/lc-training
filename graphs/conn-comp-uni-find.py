@@ -9,7 +9,7 @@ def conn_comp(n, edges):
     def find(node):
         while parents[node] != node:
             parents[node] = parents[parents[node]]
-        return parent[node]
+       return parents[node]
 
     def union(x, y):
         root1 = find(x)
